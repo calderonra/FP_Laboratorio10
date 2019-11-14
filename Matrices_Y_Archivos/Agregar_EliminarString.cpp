@@ -9,12 +9,13 @@ void rellenar(string name, string arr[5][5])
     {
         for (int j = 0; j < 5; j++)
         {
-            if (arr[i][j] == " ")
+            if (arr[i][j] == "m")
             {
                 arr[i][j] = name;
+                break;
             }
         }
-        break;
+        
     }
 }
 
@@ -53,8 +54,8 @@ int main()
                            {"6", "7", "c", "d", "9"},
                            {"k", "l", "m", "n", "o"}};
     string nombre = "Pepe";
-    //rellenar(nombre, matrix);
-    deleted(2, 2, matrix);
+    rellenar(nombre, matrix);
+    //deleted(2, 2, matrix);
     mostrar(matrix);
 
     return 0;
